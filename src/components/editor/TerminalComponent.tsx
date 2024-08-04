@@ -19,7 +19,7 @@ const TerminalComponent = () => {
       const terminal = new XTerm({
         cursorBlink: true,
         theme: {
-          background: "#1e1e1e",
+          background: "#111827",
           foreground: "#d4d4d4",
         },
       });
@@ -61,8 +61,8 @@ const TerminalComponent = () => {
   return (
     <div
       ref={terminalRef}
-      className="h-full w-full overflow-y-auto"
-      style={{ minHeight: "300px", minWidth: "100px" }}
+      className="h-full bg-[#111827] w-full overflow-y-auto"
+      style={{ minHeight: "300px", background: "#111827", minWidth: "100px" }}
     />
   );
 };
