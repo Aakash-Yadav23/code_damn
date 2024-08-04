@@ -1,5 +1,7 @@
 import { Button } from "../ui/button";
 import { Eye, UserPlus, EyeOff, Play, CloudUpload } from "lucide-react";
+import { Input } from "../ui/input";
+import SearchEditor from "./SearchEditor";
 
 export default function EditorNavbar() {
   return (
@@ -21,6 +23,9 @@ export default function EditorNavbar() {
       </Button>
 
       <div className="flex items-center gap-2">
+
+        <SearchEditor />
+
         <Button
           variant={"outline"}
           className="flex items-center gap-1 relative"
